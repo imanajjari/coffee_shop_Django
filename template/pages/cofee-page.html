@@ -1,0 +1,30 @@
+{%  load static %}
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script   type="text/javascript"  src="{% static 'js/cofee-page.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/cofee-page.css' %}">
+    <title>cofee</title>
+</head>
+<body>
+
+{% for product in products %}
+<div class="non">
+<a href="{% url 'menu:product_like' product.id %}" class="alo">{{ product.likes_count }}</a>
+<a href="{% url 'menu:product_details' post_id=product.id %}">
+ <img src="{{ product.image.url }}" style="width: 150px; height: 150px; padding-top: 5px; border-radius: 50px ;box-shadow: 10px 5px 5px rgb(80, 78, 78);display: inline-flex; margin-right: 15%; ">
+ </a>
+    <p>{{ product.content }}</p>
+ <br/>
+ <!-- <button>توضيهات</button> -->
+ <br/>
+ <p style=" margin-bottom: 10px; text-align: right; font-weight: bolder; display: inline-block;border: 1px solid white;box-shadow: 5px 5px 14px rgb(80, 78, 78); border-radius: 10px; padding: 5px;">{{ product.Price|intcomma }} تومان</p>
+ <a href="{% url 'menu:product_like' product.id %}" >{% if can_like %}unlike{% else %}like{% endif %}  {{ product.likes_count }}</a>
+</div>
+{% endfor %}
+
+</body>
+</html>

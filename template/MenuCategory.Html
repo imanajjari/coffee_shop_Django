@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/MenuCategory.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css-card/card.css' %}" class="css">
+    <title>Menu</title>
+</head>
+<body>
+ <div class="cont1">
+
+     {% for cat in category %}
+    <div class="shake">
+        <img class="image" src="{{ cat.image.url }}" >
+        <a href="{% url 'menu:list_product' cat_id=cat.id %}">
+           <p>{{ cat.name }}</p>
+            </a>
+    </div>
+     {% endfor %}
+
+</div>
+</body>
+</html>

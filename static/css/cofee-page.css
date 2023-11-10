@@ -1,0 +1,545 @@
+body{
+    background-color: rgb(46, 48, 48);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:scroll;
+    margin: auto;
+    text-align: center;
+    /* background-image: url(enlarge_bak2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.non{
+    border: solid 2px black;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 10px 5px 5px rgb(80, 78, 78);
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.non p{
+    text-align: justify;
+    text-justify: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin: 0px;
+    font-weight: bolder;
+  
+}
+.non button{
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.non button:hover{
+background-color: #2194E0;
+color: white;
+border-color: white;
+}
+/* اول کد هاي دکمه لايک */
+.non a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 4px  rgb(80, 78, 78);   
+    transition: 0.5s;
+    display: inline-flex;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.non a:active{
+    background-color: transparent;
+    background-color: red;
+}
+.non a:active::after{
+    background-color: red;
+}
+.non a:active::before{
+    background-color: red;
+}
+.non a::after{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    rotate: 270deg;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    background-color: white;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+.non a::before{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 20px;
+    height: 20px; 
+    content: '';
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    rotate: (325deg);
+    background-color: white ;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+/* آخر کد هاي دگمه لايک */
+.non2{
+    border: solid 2px black;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 10px 5px 5px rgb(80, 78, 78);
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.non2 p{
+    text-align: justify;
+    text-justify: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin: 0px;
+    font-weight: bolder;
+}
+.non2 button{
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.non2 button:hover{
+background-color: #2194E0;
+color: white;
+border-color: white;
+}
+/* اول کد هاي دکمه لايک */
+.non2 a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 4px  rgb(80, 78, 78);   
+    transition: 0.5s;
+    display: inline-flex;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.non2 a:active{
+    background-color: transparent;
+    background-color: red;
+}
+.non2 a:active::after{
+    background-color: red;
+}
+.non2 a:active::before{
+    background-color: red;
+}
+.non2 a::after{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    rotate: 270deg;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    background-color: white;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+.non2 a::before{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 20px;
+    height: 20px; 
+    content: '';
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    rotate: (325deg);
+    background-color: white ;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+/* آخر کد هاي دگمه لايک */
+.non3{
+    border: solid 2px black;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 10px 5px 5px rgb(80, 78, 78);
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.non3 p{
+    text-align: justify;
+    text-justify: none;
+    padding: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-weight: bolder;
+}
+.non3 button{
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.non3 button:hover{
+background-color: #2194E0;
+color: white;
+border-color: white;
+}
+/* اول کد هاي دکمه لايک */
+.non3 a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 2px  rgb(80, 78, 78);   
+    transition: 0.5s;
+    display: inline-flex;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.non3 a:active{
+    background-color: transparent;
+    background-color: red;
+}
+.non3 a:active::after{
+    background-color: red;
+}
+.non3 a:active::before{
+    background-color: red;
+}
+.non3 a::after{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    rotate: 270deg;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    background-color: white;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+.non3 a::before{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 20px;
+    height: 20px; 
+    content: '';
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    rotate: (325deg);
+    background-color: white ;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+/* آخر کد هاي دگمه لايک */
+.non4{
+    border: solid 2px black;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 10px 5px 5px rgb(80, 78, 78);
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.non4 p{
+    text-align: justify;
+    text-justify: none;
+    padding: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-weight: bolder;
+}
+.non4 button{
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.non4 button:hover{
+background-color: #2194E0;
+color: white;
+border-color: white;
+}
+/* اول کد هاي دکمه لايک */
+.non4 a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 4px  rgb(80, 78, 78);   
+    transition: 0.5s;
+    display: inline-flex;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.non4 a:active{
+    background-color: transparent;
+    background-color: red;
+}
+.non4 a:active::after{
+    background-color: red;
+}
+.non4 a:active::before{
+    background-color: red;
+}
+.non4 a::after{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    rotate: 270deg;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    background-color: white;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+.non4 a::before{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 20px;
+    height: 20px; 
+    content: '';
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    rotate: (325deg);
+    background-color: white ;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+/* آخر کد هاي دگمه لايک */
+.non5{
+    border: solid 2px black;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 10px 5px 5px rgb(80, 78, 78);
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.non5 p{
+    text-align: justify;
+    text-justify: none;
+    padding: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+
+.non5 button{
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.non5 button:hover{
+background-color: #2194E0;
+color: white;
+border-color: white;
+}
+/* اول کد هاي دکمه لايک */
+.non5 a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 4px  rgb(80, 78, 78);   
+    transition: 0.5s;
+    display: inline-flex;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.non5 a:active{
+    background-color: transparent;
+    background-color: red;
+}
+.non5 a:active::after{
+    background-color: red;
+}
+.non5 a:active::before{
+    background-color: red;
+}
+.non5 a::after{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    rotate: 270deg;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    background-color: white;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+.non5 a::before{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 20px;
+    height: 20px; 
+    content: '';
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    rotate: (325deg);
+    background-color: white ;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+/* آخر کد هاي دگمه لايک */
+.non6{
+    border: solid 2px black;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: inline-block;
+     margin: 20px;
+     box-shadow: 10px 5px 5px rgb(80, 78, 78);
+     background-color: rgba(255, 255, 255, 0.89);
+}
+.non6 p{
+    text-align: justify;
+    text-justify: none;
+    padding: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-weight: bolder;
+}
+.non6 button{
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.non6 button:hover{
+background-color: #2194E0;
+color: white;
+border-color: white;
+}
+/* اول کد هاي دکمه لايک */
+.non6 a{
+    text-decoration: none;
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 4px  rgb(80, 78, 78);   
+    transition: 0.5s;
+    display: inline-flex;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.non6 a:active{
+    background-color: transparent;
+    background-color: red;
+}
+.non6 a:active::after{
+    background-color: red;
+}
+.non6 a:active::before{
+    background-color: red;
+}
+.non6 a::after{
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    rotate: 270deg;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    background-color: white;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+.non6 a::before{
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    width: 20px;
+    height: 20px; 
+    content: '';
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    rotate: (325deg);
+    background-color: white ;
+    opacity: 1;
+    z-index: 0;
+    transition: 0.5s;
+}
+/* آخر کد هاي دگمه لايک */
+
